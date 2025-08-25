@@ -45,3 +45,7 @@ jobs:
       uses: github/codeql-action/upload-sarif@v3
       with:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
+        permissions:
+  contents: read
+  actions: read
+  security-events: write
