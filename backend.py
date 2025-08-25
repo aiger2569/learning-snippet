@@ -3,7 +3,7 @@ import pyttsx3
 import google.generativeai as genai
 
 # Initialize Gemini API
-genai.configure(api_key= "AIzaSyA2Me6Ve1gc-qse7nuVZUJY-ru0lUGc854")
+genai.configure(api_key= "your_key")
 model = genai.GenerativeModel("gemini-1.5-pro")
 
 
@@ -41,3 +41,4 @@ def create_audio_snippet(topics, minutes, output_dir):
     
     # Return just the filename - the static folder path will be handled by url_for
     return filename, f"Generating {minutes} minutes of learning snippets on the topics: {topics}"
+
